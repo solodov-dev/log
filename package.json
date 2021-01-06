@@ -1,0 +1,30 @@
+{
+  "name": "log",
+  "version": "1.0.0",
+  "description": "My personal log site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solodov-dev/log.git"
+  },
+  "keywords": [
+    "gatsby",
+    "log",
+    "solodov",
+    "dev"
+  ],
+  "author": "Andrey Solodov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solodov-dev/log/issues"
+  },
+  "homepage": "https://github.com/solodov-dev/log#readme",
+  "dependencies": {
+    "gatsby": "^2.30.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
