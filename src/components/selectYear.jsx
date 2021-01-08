@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../styles/selectYear.module.scss';
+import styles from '../styles/selectYear.module.scss';
 
 export default function SelectYear({ years, setYear }) {
   return (
