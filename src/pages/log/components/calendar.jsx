@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/calendar.module.css';
+import styles from '../../../styles/calendar.module.scss';
 
 export default function Calendar({ year }) {
   const days = new Array(daysInYear(year)).fill('x');

@@ -1,10 +1,12 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
+import Log from './log/log';
 
 export default function App({ data }) {
   return (
     <div>
-      {/* <h4>{data.allMarkdownRemark.totalCount} Posts</h4> */}
+      <Log startYear={data.site.siteMetadata.startYear} />
+      <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
       {/* {data.allMarkdownRemark.edges.map(({ node }) => ( */}
       {/*   <div key={node.id}> */}
       {/*     <span>{new Date(node.frontmatter.date).toLocaleDateString()}</span> */}
@@ -22,6 +24,11 @@ export default function App({ data }) {
 
 export const query = graphql`
   query {
+    site {
+      siteMetadata {
+        startYear
+      }
+    }
     allMarkdownRemark {
       totalCount
       edges {
