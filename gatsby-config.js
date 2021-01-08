@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: 'Title from siteMetadata',
+    startYear: 2020,
   },
   plugins: [
     'gatsby-transformer-remark',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'log',
-        path: `${__dirname}/src/log/`,
+        name: 'data',
+        path: `${__dirname}/src/data/`,
       },
     },
     {
