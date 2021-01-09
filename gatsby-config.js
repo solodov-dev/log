@@ -1,6 +1,14 @@
 module.exports = {
   siteMetadata: {
     startYear: 2020,
+    links: {
+      github: 'https://github.com/solodov-dev',
+      leetcode: 'https://leetcode.com/solodov-dev/',
+      hackerrank: 'https://www.hackerrank.com/solodov_dev',
+      telegram: 'https://t.me/solodov_dev',
+      linkedin: 'https://www.linkedin.com/in/solodov-dev/',
+      goodreads: 'goodreads.com/solodov',
+    },
   },
   plugins: [
     'gatsby-transformer-remark',

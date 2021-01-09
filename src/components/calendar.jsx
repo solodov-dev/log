@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from '../styles/calendar.module.scss';
+import daysInYear from '../helpers/daysInYear';
 
-export default function Calendar({ year }) {
-  const days = new Array(daysInYear(year)).fill('x');
+export default function Calendar({ year, notes }) {
+  const days = new Array(daysInYear(year)).fill('');
   const offset = new Date(year, 0, 1).getDay() - 1;
 
   return (
@@ -16,10 +17,3 @@ export default function Calendar({ year }) {
     </div>
   );
 }
-
-const daysInYear = (year) => {
-  if (year % 4 === 0 && year % 100 === 0 && year % 400 === 0) {
-    return 366;
-  }
-  return 365;
-};

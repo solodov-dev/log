@@ -1,0 +1,14 @@
+@import 'mixins.scss';
+
+.menu {
+  list-style: none;
+
+  li {
+    margin-right: 1em;
+    @include link;
+  }
+}
+
+.active {
+  text-decoration: underline;
+}

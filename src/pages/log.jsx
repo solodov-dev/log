@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Calendar from '../components/calendar';
-import SelectYear from '../components/selectYear';
+import Navigation from '../components/navigation';
 import { graphql } from 'gatsby';
+import getYearsArray from '../helpers/getYearsArray';
 
 export default function Log({ data }) {
   const thisYear = new Date().getFullYear();
@@ -10,23 +11,11 @@ export default function Log({ data }) {
 
   return (
     <div>
-      <SelectYear years={years} setYear={setYear} />
+      <Navigation activeYear={year} years={years} setYear={setYear} />
       <Calendar year={year} />
     </div>
   );
 }
-
-const getYearsArray = (startYear, thisYear) => {
-  if (thisYear === startYear) {
-    return startYear;
-  } else {
-    const years = [];
-    for (let year = startYear; year <= thisYear; year++) {
-      years.push(year);
-    }
-    return years;
-  }
-};
 
 export const query = graphql`
   query {

@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Pacifico&display=swap');
+@import 'mixins.scss';
 
 html {
   font-family: 'Montserrat', sans-serif;
+  background-color: #213047;
+  color: #fff;
+}
+
+a {
+  @include link;
 }
 
 h1,
@@ -10,4 +17,9 @@ h3,
 h4,
 h5 {
   font-family: 'Pacifico', cursive;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 60px;
 }
