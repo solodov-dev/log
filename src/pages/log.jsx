@@ -12,7 +12,12 @@ export default function Log({ data }) {
   return (
     <div>
       <Navigation activeYear={year} years={years} setYear={setYear} />
-      <Calendar year={year} />
+      <Calendar
+        year={year}
+        notes={data.allMarkdownRemark.edges.filter(
+          (edge) => new Date(edge.node.frontmatter.date).getFullYear() === year
+        )}
+      />
     </div>
   );
 }
