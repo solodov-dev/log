@@ -2,12 +2,14 @@ module.exports = {
   siteMetadata: {
     startYear: 2020,
     links: {
-      github: 'https://github.com/solodov-dev',
-      leetcode: 'https://leetcode.com/solodov-dev/',
+      github: 'https://www.github.com/solodov-dev',
+      leetcode: 'https://www.leetcode.com/solodov-dev/',
       hackerrank: 'https://www.hackerrank.com/solodov_dev',
-      telegram: 'https://t.me/solodov_dev',
+      telegram: 'https://www.t.me/solodov_dev',
       linkedin: 'https://www.linkedin.com/in/solodov-dev/',
-      goodreads: 'goodreads.com/solodov',
+      goodreads: 'https://www.goodreads.com/solodov',
+      email: 'mailto:solodov.dev@gmail.com?subject=Mail from sldv.link',
+      cv: '/cv/',
     },
   },
   plugins: [
@@ -18,6 +20,13 @@ module.exports = {
       options: {
         name: 'data',
         path: `${__dirname}/src/data/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'assets',
+        path: `${__dirname}/src/assets/`,
       },
     },
     {

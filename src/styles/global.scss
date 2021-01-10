@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Pacifico&display=swap');
 @import 'mixins.scss';
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Montserrat', sans-serif;
   background-color: #213047;
   color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+body {
+  margin: 0;
 }
 
 a {
@@ -18,6 +35,7 @@ h4,
 h5 {
   font-family: 'Pacifico', cursive;
   font-weight: 500;
+  margin-top: 0;
 }
 
 h1 {
