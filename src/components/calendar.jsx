@@ -2,12 +2,12 @@ import React from 'react';
 import styles from '../styles/calendar.module.scss';
 import daysInYear from '../helpers/daysInYear';
 import dayOfYear from '../helpers/dayOfYear';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 export default function Calendar({ year, notes }) {
   const days = Array(daysInYear(year))
     .fill(0)
-    .map((el) => Array(0));
+    .map(() => Array(0));
 
   const offset = Array(new Date(year, 0, 1).getDay() - 1).fill(null);
 
@@ -20,13 +20,14 @@ export default function Calendar({ year, notes }) {
       {offset.map((_, i) => (
         <div key={i} />
       ))}
-      {days.map((day, i) =>
-        day.length ? (
-          <div key={i} className={styles.note} title={JSON.stringify(day)} />
-        ) : (
-          <div key={i} className={styles.day} />
-        )
-      )}
+      {days.map((day, i) => (
+        <div
+          key={i}
+          className={day.length ? styles.note : styles.day}
+          title={JSON.stringify(day)}
+          // style={{ animationDelay: `${i / 200}s` }}
+        />
+      ))}
     </div>
   );
 }
