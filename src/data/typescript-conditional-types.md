@@ -1,6 +1,6 @@
 ---
 title: typescript conditional types
-date: sep 14, 2020
+date: sep 15, 2020
 tags: [typescript]
 ---
 

@@ -2,11 +2,12 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Links from '../components/links';
 import styles from '../styles/index.module.scss';
+import Layout from '../layouts/layout';
 
 export default function Home({ data }) {
   const { links } = data.site.siteMetadata;
   return (
-    <main>
+    <Layout>
       <h1>Hi! My name is Andrey</h1>
       <div className={styles.text}>
         <p>
@@ -27,7 +28,7 @@ export default function Home({ data }) {
       <footer>
         <Links links={links} />
       </footer>
-    </main>
+    </Layout>
   );
 }
 

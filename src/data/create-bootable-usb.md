@@ -1,6 +1,6 @@
 ---
 title: create bootable usb
-date: oct 6, 2020
+date: oct 7, 2020
 tags: [linux, shell]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: counting certain elements in an array
-date: dec 6, 2020
+date: dec 8, 2020
 tags: [js]
 ---
 

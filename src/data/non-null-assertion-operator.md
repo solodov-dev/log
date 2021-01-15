@@ -1,6 +1,6 @@
 ---
 title: non-null assertion operator
-date: sep 14, 2020
+date: sep 11, 2020
 tags: [typescript]
 ---
 

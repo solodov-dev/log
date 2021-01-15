@@ -1,6 +1,6 @@
 ---
 title: iterating over objects in typescript
-date: sep 14, 2020
+date: sep 13, 2020
 tags: [typescript]
 ---
 

@@ -32,7 +32,7 @@
 
 .note {
   @extend .day;
-  background-color: tomato;
+  background-color: rgb(249, 42, 173);
   &:hover {
     transform: scale(1.2);
     cursor: pointer;

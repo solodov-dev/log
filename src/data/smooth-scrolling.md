@@ -1,6 +1,6 @@
 ---
 title: smooth scrolling
-date: oct 20, 2020
+date: oct 21, 2020
 tags: [js]
 ---
 

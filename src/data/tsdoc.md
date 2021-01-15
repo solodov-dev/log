@@ -1,6 +1,6 @@
 ---
 title: tsdoc
-date: sep 14, 2020
+date: sep 16, 2020
 tags: [typescript]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: ant-design dynamic less variables
-date: sep 17, 2020
+date: sep 19, 2020
 tags: [ant-design, less]
 ---
 
