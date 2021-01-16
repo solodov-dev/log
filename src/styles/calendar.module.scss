@@ -3,13 +3,25 @@
   gap: 10px;
   grid-template-rows: repeat(7, 20px);
   grid-auto-flow: column;
+  padding: 0 10em;
+}
+
+.wrapper {
+  flex: 1;
+  margin: 0 -60px;
+  display: flex;
+  align-items: center;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .day {
   width: 20px;
   height: 20px;
   border-radius: 50px;
-  background-color: #fff;
+  background-color: var(--white);
   transition: all 0.3s ease-in;
   // animation: pop-in 0.3s ease-in forwards;
   // opacity: 0;
@@ -32,7 +44,7 @@
 
 .note {
   @extend .day;
-  background-color: rgb(249, 42, 173);
+  background-color: var(--primary);
   &:hover {
     transform: scale(1.2);
     cursor: pointer;

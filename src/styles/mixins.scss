@@ -1,5 +1,5 @@
 @mixin link {
-  color: rgb(249, 42, 173);
+  color: var(--primary);
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-out;

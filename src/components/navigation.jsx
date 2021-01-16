@@ -6,7 +6,9 @@ export default function Navigation({ years, activeYear, setYear }) {
   return (
     <ul className={styles.menu}>
       <li>
-        <Link to="/">home</Link>
+        <Link to="/">
+          <h1>home</h1>
+        </Link>
       </li>
       {years.map((year) => (
         <li
@@ -14,7 +16,7 @@ export default function Navigation({ years, activeYear, setYear }) {
           onClick={() => setYear(year)}
           style={{ textDecoration: year === activeYear ? 'underline' : 'none' }}
         >
-          {year}
+          <h1>{year}</h1>
         </li>
       ))}
     </ul>
