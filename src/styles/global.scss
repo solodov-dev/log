@@ -10,6 +10,7 @@
   scrollbar-width: none;
   &::-webkit-scrollbar {
     height: 2px;
+    width: 2px;
   }
 
   &::-webkit-scrollbar-thumb {

@@ -14,7 +14,7 @@ export default function Navigation({ years, activeYear, setYear }) {
         <li
           key={year}
           onClick={() => setYear(year)}
-          style={{ textDecoration: year === activeYear ? 'underline' : 'none' }}
+          className={year === activeYear && styles.active}
         >
           <h1>{year}</h1>
         </li>

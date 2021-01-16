@@ -1,4 +1,5 @@
 import React from 'react';
+import Months from './months';
 import styles from '../styles/calendar.module.scss';
 import daysInYear from '../helpers/daysInYear';
 import dayOfYear from '../helpers/dayOfYear';
@@ -16,16 +17,19 @@ export default function Calendar({ year, notes }) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.calendar}>
-        {offset.map((_, i) => (
-          <div key={i} />
-        ))}
-        {days.map((day, i) =>
-          day ? (
-            <Link to={day.node.fields.slug} key={i} className={styles.note} />
-          ) : (
-            <div className={styles.day} key={i} />
-          )
-        )}
+        <div className={styles.days}>
+          {offset.map((_, i) => (
+            <div key={i} />
+          ))}
+          {days.map((day, i) =>
+            day ? (
+              <Link to={day.node.fields.slug} key={i} className={styles.note} />
+            ) : (
+              <div className={styles.day} key={i} />
+            )
+          )}
+        </div>
+        <Months />
       </div>
     </div>
   );

@@ -1,9 +1,11 @@
 .calendar {
+  padding: 0 10em;
+}
+.days {
   display: grid;
   gap: 10px;
   grid-template-rows: repeat(7, 20px);
   grid-auto-flow: column;
-  padding: 0 10em;
 }
 
 .wrapper {
@@ -22,11 +24,19 @@
   height: 20px;
   border-radius: 50px;
   background-color: var(--white);
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
   // animation: pop-in 0.3s ease-in forwards;
   // opacity: 0;
 }
 
+.note {
+  @extend .day;
+  background-color: var(--primary);
+  &:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+  }
+}
 // @keyframes pop-in {
 //   0% {
 //     opacity: 0;
@@ -41,12 +51,3 @@
 //     transform: scale(1);
 //   }
 // }
-
-.note {
-  @extend .day;
-  background-color: var(--primary);
-  &:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-  }
-}

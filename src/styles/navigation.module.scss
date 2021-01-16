@@ -1,14 +1,13 @@
 @import 'mixins.scss';
 
 .menu {
-  list-style: none;
-
   li {
     margin-right: 1em;
     @include link;
   }
 }
 
-.active {
-  text-decoration: underline;
+.active h1 {
+  transition: all 0.2s ease-out;
+  color: var(--primary);
 }

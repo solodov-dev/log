@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import Links from '../components/links';
 import styles from '../styles/index.module.scss';
 import Layout from '../layouts/layout';
 
@@ -25,9 +24,6 @@ export default function Home({ data }) {
           account.
         </p>
       </div>
-      <footer>
-        <Links links={links} />
-      </footer>
     </Layout>
   );
 }
