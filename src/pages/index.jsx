@@ -1,14 +1,14 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import styles from '../styles/index.module.scss';
 import Layout from '../layouts/layout';
+import Content from '../layouts/content';
 
 export default function Home({ data }) {
   const { links } = data.site.siteMetadata;
   return (
     <Layout>
       <h1>Hi! My name is Andrey</h1>
-      <div className={styles.text}>
+      <Content>
         <p>
           I am a frontend web developer. This website is my personal{' '}
           <Link to="/log">log</Link>. My online digital notebook, where I record
@@ -23,7 +23,7 @@ export default function Home({ data }) {
           restricted by NDA, on my public <a href={links.github}>github</a>{' '}
           account.
         </p>
-      </div>
+      </Content>
     </Layout>
   );
 }

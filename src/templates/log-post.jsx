@@ -1,16 +1,28 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layouts/layout.jsx';
-import Tags from '../components/tags.jsx';
+import styles from '../styles/log-post.module.scss';
+import Content from '../layouts/content.jsx';
 
 export default function LogPost({ data }) {
   const post = data.markdownRemark;
   return (
     <Layout>
-      <h1>{post.frontmatter.title}</h1>
-      <Tags tags={post.frontmatter.tags} />
-      <h3>{post.frontmatter.date}</h3>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div className={styles.post}>
+        <h1>{post.frontmatter.title}</h1>
+        <Content>
+          <div className={styles.subTitle}>
+            <h3>
+              {new Date(post.frontmatter.date).toLocaleDateString(undefined, {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric',
+              })}
+            </h3>
+          </div>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </Content>
+      </div>
     </Layout>
   );
 }

@@ -1,12 +1,3 @@
-@import './mixins.scss';
-
 .searchRes {
   margin-bottom: 1em;
-}
-
-.tags {
-  li {
-    margin-right: 1em;
-    @include link;
-  }
 }

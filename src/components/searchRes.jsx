@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styles from '../styles/searchRes.module.scss';
+import Tags from './tags';
 
 export default function SearchRes({ node, setQuery }) {
   return (
@@ -8,13 +9,7 @@ export default function SearchRes({ node, setQuery }) {
       <Link to={node.slug}>
         <h3>{node.title}</h3>
       </Link>
-      <ul className={styles.tags}>
-        {node.tags.map((tag) => (
-          <li key={tag} onClick={() => setQuery(tag)}>
-            #{tag}
-          </li>
-        ))}
-      </ul>
+      <Tags tags={node.tags} onClick={setQuery} />
     </div>
   );
 }
