@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/solodov-dev/log#readme",
   "dependencies": {
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.4.2",
+    "elasticlunr": "^0.9.5",
     "gatsby": "^2.30.0",
     "gatsby-plugin-prettier-eslint": "^1.0.4",
     "gatsby-plugin-sass": "^3.0.0",

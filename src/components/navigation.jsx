@@ -19,6 +19,11 @@ export default function Navigation({ years, activeYear, setYear }) {
           <h1>{year}</h1>
         </li>
       ))}
+      <li className={styles.search}>
+        <Link to="/search">
+          <h1>search</h1>
+        </Link>
+      </li>
     </ul>
   );
 }
