@@ -16,6 +16,7 @@
 
 .search {
   margin-left: auto;
+  position: relative;
   input {
     background: transparent;
     color: var(--white);
@@ -28,6 +29,26 @@
 
     &:focus {
       outline: none;
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    bottom: 2em;
+    background-color: var(--secondary);
+    width: 1em;
+    height: 1em;
+    color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--primary);
     }
   }
 }

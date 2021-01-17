@@ -34,6 +34,7 @@ export default function Navigation({
           className={styles.search}
           value={query}
         />
+        {query && <button onClick={() => setQuery('')}>&times;</button>}
       </li>
     </ul>
   );
