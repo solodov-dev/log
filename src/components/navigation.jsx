@@ -14,7 +14,7 @@ export default function Navigation({
     <ul className={styles.menu}>
       <li style={opaque}>
         <Link to="/" title="Home">
-          <h1>&#8602;</h1>
+          <h1>&#8601;</h1>
         </Link>
       </li>
       {years.map((year) => (

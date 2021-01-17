@@ -7,7 +7,7 @@ export default function Home({ data }) {
   const { links } = data.site.siteMetadata;
   return (
     <Layout>
-      <h1>Hi! My name is Andrey</h1>
+      <h1 style={{ margin: '2rem 0' }}>Hi! My name is Andrey</h1>
       <Content>
         <p>
           I am a frontend web developer. This website is my personal{' '}

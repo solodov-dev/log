@@ -54,6 +54,13 @@
 }
 
 @media screen and (max-width: 800px) {
+  .search {
+    input {
+      font-size: 2rem;
+      max-width: 10rem;
+      padding: 2px;
+    }
+  }
   .menu {
     flex-direction: column;
     align-items: flex-start;
