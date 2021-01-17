@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    title: 'solodov_dev/log',
     startYear: 2020,
     links: {
       github: 'https://www.github.com/solodov-dev',
@@ -9,10 +10,21 @@ module.exports = {
       linkedin: 'https://www.linkedin.com/in/solodov-dev/',
       goodreads: 'https://www.goodreads.com/solodov',
       email: 'mailto:solodov.dev@gmail.com?subject=Mail from sldv.link',
-      cv: '/cv/',
     },
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'solodov_dev/log',
+        short_name: 'log',
+        start_url: '/',
+        background_color: '#19243c',
+        theme_color: '#f92aad',
+        display: 'standalone',
+        icon: 'manifest/android-chrome-512x512.png',
+      },
+    },
     {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {

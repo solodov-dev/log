@@ -12,8 +12,8 @@ export default function Home({ data }) {
         <p>
           I am a frontend web developer. This website is my personal{' '}
           <Link to="/log">log</Link>. My online digital notebook, where I record
-          all things that I learn during my daily work as a developer. Also, I
-          like solving problems on websites like{' '}
+          different things that I learn during my daily work as a developer.
+          Also, I like solving problems on websites like{' '}
           <a href={links.leetcode}>leetcode</a> and{' '}
           <a href={links.hackerrank}>hackerrank</a>. You can find some of my
           solutions in my <Link to="/log">log</Link> too.
@@ -22,6 +22,15 @@ export default function Home({ data }) {
           This website is NOT a portfolio. You can find my code, which is not
           restricted by NDA, on my public <a href={links.github}>github</a>{' '}
           account.
+        </p>
+        <p>
+          If you want to contact me directly, send me a{' '}
+          <a href={links.telegram}>message</a> or an{' '}
+          <a href={links.email}>email</a>.
+        </p>
+        <p>
+          PS. I love reading, and you can follow my reading list or send me a
+          book suggestion on <a href={links.goodreads}>goodreads</a>.
         </p>
       </Content>
     </Layout>
@@ -39,7 +48,6 @@ export const query = graphql`
           telegram
           linkedin
           goodreads
-          cv
           email
         }
       }
