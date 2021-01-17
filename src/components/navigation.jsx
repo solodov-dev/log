@@ -9,9 +9,10 @@ export default function Navigation({
   setQuery,
   query,
 }) {
+  const opaque = { opacity: query ? 0 : 1 };
   return (
     <ul className={styles.menu}>
-      <li style={{ opacity: query ? 0 : 1 }}>
+      <li style={opaque}>
         <Link to="/" title="Home">
           <h1>&#8602;</h1>
         </Link>
@@ -21,7 +22,7 @@ export default function Navigation({
           key={year}
           onClick={() => setYear(year)}
           className={year === activeYear && styles.active}
-          style={{ opacity: query ? 0 : 1 }}
+          style={opaque}
         >
           <h1>{year}</h1>
         </li>

@@ -110,13 +110,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'assets',
-        path: `${__dirname}/src/assets/`,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-prettier-eslint',
       options: {
         cwd: process.cwd(), // path to a directory that should be considered as the current working directory

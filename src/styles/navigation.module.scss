@@ -19,15 +19,31 @@
   input {
     background: transparent;
     color: var(--white);
-    font-size: 2em;
+    font-size: 3rem;
     caret-color: var(--secondary);
     border: none;
-    max-width: 300px;
+    max-width: 19rem;
     border-bottom: 1px solid var(--secondary);
     padding: 4px;
 
     &:focus {
       outline: none;
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    h1 {
+      margin: 0 0.5rem;
+      margin-left: 0;
+    }
+  }
+
+  .search {
+    margin-left: 0;
+    margin-bottom: 1rem;
   }
 }

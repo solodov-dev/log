@@ -7,8 +7,8 @@ export default function SearchRes({ res, setQuery }) {
   return (
     <ul className={styles.list}>
       {res.map((node, i) => (
-        <li>
-          <div key={i} className={styles.searchRes}>
+        <li key={i}>
+          <div className={styles.searchRes}>
             <Link to={node.slug}>
               <h3>{node.title}</h3>
             </Link>

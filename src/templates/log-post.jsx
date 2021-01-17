@@ -10,7 +10,7 @@ export default function LogPost({ data }) {
     <Layout>
       <div className={styles.post}>
         <h1>
-          <Link to="/">&#8602; </Link>
+          <Link to="/log">&#8602;</Link>
           {post.frontmatter.title}
         </h1>
         <Content>
