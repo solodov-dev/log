@@ -2,12 +2,18 @@ import React from 'react';
 import styles from '../styles/navigation.module.scss';
 import { Link } from 'gatsby';
 
-export default function Navigation({ years, activeYear, setYear }) {
+export default function Navigation({
+  years,
+  activeYear,
+  setYear,
+  setQuery,
+  query,
+}) {
   return (
     <ul className={styles.menu}>
-      <li>
-        <Link to="/">
-          <h1>home</h1>
+      <li style={{ opacity: query ? 0 : 1 }}>
+        <Link to="/" title="Home">
+          <h1>&#8602;</h1>
         </Link>
       </li>
       {years.map((year) => (
@@ -15,14 +21,18 @@ export default function Navigation({ years, activeYear, setYear }) {
           key={year}
           onClick={() => setYear(year)}
           className={year === activeYear && styles.active}
+          style={{ opacity: query ? 0 : 1 }}
         >
           <h1>{year}</h1>
         </li>
       ))}
       <li className={styles.search}>
-        <Link to="/search">
-          <h1>search</h1>
-        </Link>
+        <input
+          placeholder="search"
+          onChange={(e) => setQuery(e.target.value)}
+          className={styles.search}
+          value={query}
+        />
       </li>
     </ul>
   );

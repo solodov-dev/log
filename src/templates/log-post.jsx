@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Layout from '../layouts/layout.jsx';
 import styles from '../styles/log-post.module.scss';
 import Content from '../layouts/content.jsx';
@@ -9,7 +9,10 @@ export default function LogPost({ data }) {
   return (
     <Layout>
       <div className={styles.post}>
-        <h1>{post.frontmatter.title}</h1>
+        <h1>
+          <Link to="/">&#8602; </Link>
+          {post.frontmatter.title}
+        </h1>
         <Content>
           <div className={styles.subTitle}>
             <h3>

@@ -23,7 +23,12 @@ export default function Calendar({ year, notes }) {
           ))}
           {days.map((day, i) =>
             day ? (
-              <Link to={day.node.fields.slug} key={i} className={styles.note} />
+              <Link
+                title={day.node.frontmatter.title}
+                to={day.node.fields.slug}
+                key={i}
+                className={styles.note}
+              />
             ) : (
               <div className={styles.day} key={i} />
             )
