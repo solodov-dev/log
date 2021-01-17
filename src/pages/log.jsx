@@ -6,6 +6,7 @@ import getYearsArray from '../helpers/getYearsArray';
 import Layout from '../layouts/layout.jsx';
 import SearchRes from '../components/searchRes';
 import { Index } from 'elasticlunr';
+import { Helmet } from 'react-helmet';
 
 export default function Log({ data }) {
   const thisYear = new Date().getFullYear();
@@ -27,6 +28,9 @@ export default function Log({ data }) {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{`log_${year}`}</title>
+      </Helmet>
       <Navigation
         activeYear={year}
         years={years}

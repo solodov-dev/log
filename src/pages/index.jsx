@@ -2,11 +2,15 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../layouts/layout';
 import Content from '../layouts/content';
+import { Helmet } from 'react-helmet';
 
 export default function Home({ data }) {
   const { links } = data.site.siteMetadata;
   return (
     <Layout>
+      <Helmet>
+        <title>solodov_dev</title>
+      </Helmet>
       <h1 style={{ margin: '2rem 0' }}>Hi! My name is Andrey</h1>
       <Content>
         <p>

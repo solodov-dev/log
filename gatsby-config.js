@@ -25,6 +25,8 @@ module.exports = {
         icon: 'manifest/android-chrome-512x512.png',
       },
     },
+    'gatsby-plugin-offline',
+    'gatsby-plugin-react-helmet',
     {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {

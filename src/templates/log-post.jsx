@@ -3,11 +3,15 @@ import { graphql, Link } from 'gatsby';
 import Layout from '../layouts/layout.jsx';
 import styles from '../styles/log-post.module.scss';
 import Content from '../layouts/content.jsx';
+import { Helmet } from 'react-helmet';
 
 export default function LogPost({ data }) {
   const post = data.markdownRemark;
   return (
     <Layout>
+      <Helmet>
+        <title>{post.frontmatter.title}</title>
+      </Helmet>
       <div className={styles.post}>
         <h1>
           <Link to="/log">&#8601;</Link>
