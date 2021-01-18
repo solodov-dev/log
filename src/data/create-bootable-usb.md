@@ -1,5 +1,5 @@
 ---
-title: create bootable usb
+title: Create bootable usb
 date: oct 7, 2020
 tags: [linux, shell]
 ---

@@ -1,5 +1,5 @@
 ---
-title: small caps
+title: Small caps
 date: jul 28, 2020
 tags: [css, font]
 ---

@@ -1,10 +1,10 @@
 ---
-title: import multiple files from a directory with webpack
+title: Import multiple files from a directory with webpack
 date: nov 25, 2020
 tags: [react, webpack]
 ---
 
-```tsx
+```js
 function importAll(r: any): Array<any> {
   return r.keys().map(r);
 }

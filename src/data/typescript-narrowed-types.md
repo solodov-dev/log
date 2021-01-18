@@ -1,7 +1,7 @@
 ---
-title: typescript narrowed types
+title: Typescript narrowed types
 date: aug 19, 2020
-tags: [typescript]
+tags: [typescript, types]
 ---
 
 Some functions are able to use type guards to perform type narrowing across arrays or objects. If you do some lookups in an array, for instance, you may wind up with an array of nullable types:

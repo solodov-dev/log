@@ -1,7 +1,7 @@
 ---
-title: making flowcharts
+title: Making flowcharts
 date: aug 1, 2020
 tags: [algorithms]
 ---
 
-[https://miro.com/app/board/o9J_koXjHuk=/](https://miro.com/app/board/o9J_koXjHuk=/)
+A tool for making flowcharts [Miro](https://miro.com/app/board/o9J_koXjHuk=/). Nice for Class diagrams.

@@ -1,9 +1,9 @@
 ---
-title: find unique elements in array
+title: Find unique elements in array
 date: dec 6, 2020
-tags: [js]
+tags: [js, array, set]
 ---
 
-```tsx
+```ts
 new Set([...arr]).size;
 ```

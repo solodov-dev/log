@@ -1,7 +1,7 @@
 ---
-title: portals
+title: Portals
 date: nov 10, 2020
 tags: [jsx, react]
 ---
 
-[Portals - React](https://reactjs.org/docs/portals.html)
+Usting [Portals](https://reactjs.org/docs/portals.html) in React

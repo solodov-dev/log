@@ -1,5 +1,5 @@
 ---
-title: multiple setstate
+title: Multiple setstate
 date: sep 12, 2020
 tags: [hooks, react]
 ---

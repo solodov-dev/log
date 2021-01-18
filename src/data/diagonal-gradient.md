@@ -1,15 +1,15 @@
 ---
-title: diagonal gradient
+title: Diagonal gradient
 date: nov 19, 2020
 tags: [css]
 ---
 
 ```html
-<div id="show_bg_2">something here</div>
+<div id="gradient">something here</div>
 ```
 
 ```css
-#show_bg_2 {
+#gradient{
   background-image: linear-gradient(
       to bottom,
       rgba(245, 246, 252, 0.52),

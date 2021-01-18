@@ -1,9 +1,9 @@
 ---
-title: smooth scrolling
+title: Smooth scrolling
 date: oct 21, 2020
-tags: [js]
+tags: [js, scroll]
 ---
 
-```bash
+```js
 el.scrollIntoView({behavior: 'smooth'});
 ```

@@ -1,10 +1,10 @@
 ---
-title: extending built-in types
+title: Extending built-in types
 date: sep 14, 2020
-tags: [typescript]
+tags: [typescript, types]
 ---
 
-```tsx
+```ts
 // Simple solution
 (document as any).monkey = 'Tamarin'; // OK
 

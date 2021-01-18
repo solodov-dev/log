@@ -1,5 +1,5 @@
 ---
-title: switch/case based on object notation
+title: Switch/case based on object notation
 date: dec 28, 2020
 tags: [js, jsx, react]
 ---

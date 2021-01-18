@@ -1,5 +1,5 @@
 ---
-title: start and enable a service on startup on linux
+title: Start and enable a service on startup on linux
 date: dec 7, 2020
 tags: [linux]
 ---

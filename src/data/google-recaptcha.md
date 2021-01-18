@@ -1,8 +1,10 @@
 ---
-title: google recaptcha
+title: Google recaptcha
 date: sep 17, 2020
-tags: [captcha]
+tags: [captcha, google, react]
 ---
+
+Using google ReCAPTCHA in react project
 
 ```tsx
 import ReCAPTCHA from 'react-google-recaptcha';

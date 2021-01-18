@@ -1,5 +1,5 @@
 ---
-title: remove element from an array in react state
+title: Remove element from an array in react state
 date: nov 11, 2020
 tags: [array, react, state]
 ---

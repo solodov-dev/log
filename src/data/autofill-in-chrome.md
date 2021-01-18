@@ -1,12 +1,12 @@
 ---
-title: autofill in chrome
+title: Autofill in chrome
 date: aug 3, 2020
-tags: [js, react, typescript]
+tags: [js, react, autofill, chrome]
 ---
 
-[Chrome ignores autocomplete="off"](https://stackoverflow.com/a/32578659)
+Chrome ignores [autocomplete="off"](https://stackoverflow.com/a/32578659) on input elements. To disable autocomplete in Chrome
 
-## In React (with ref)
+In React (with ref):
 
 ```tsx
 const ref = useRef<Password>(null);
@@ -18,7 +18,7 @@ const ref = useRef<Password>(null);
 />;
 ```
 
-## In plain HTML
+In plain HTML:
 
 ```jsx
 <input readonly onfocus="this.removeAttribute('readonly');" />

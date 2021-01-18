@@ -1,10 +1,10 @@
 ---
-title: iterating over objects in typescript
+title: Iterating over objects in typescript
 date: sep 13, 2020
 tags: [typescript]
 ---
 
-```tsx
+```ts
 // If you know what the keys are
 let k: keyof typeof obj; // Type is "one" | "two" | "three"
 

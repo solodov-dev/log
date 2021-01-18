@@ -1,10 +1,10 @@
 ---
-title: mapping over enum in typescript
+title: Mapping over enum in typescript
 date: jul 30, 2020
-tags: [typescript]
+tags: [typescript, enum]
 ---
 
-- Creating an object from enum by iterating over it with Object.keys
+Creating an object from enum by iterating over it with `Object.keys`:
 
 ```tsx
 enum QuestionStatus {

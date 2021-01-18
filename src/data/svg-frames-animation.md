@@ -1,5 +1,5 @@
 ---
-title: svg frames animation
+title: Svg frames animation
 date: aug 24, 2020
 tags: [animation, css, svg]
 ---

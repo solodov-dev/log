@@ -1,7 +1,7 @@
 ---
-title: jest test coverage
+title: Jest test coverage
 date: sep 5, 2020
-tags: [jest, testing]
+tags: [jest, testing, shell]
 ---
 
 ```bash

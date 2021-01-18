@@ -1,10 +1,10 @@
 ---
-title: check for circular dependencies
+title: Check for circular dependencies
 date: oct 12, 2020
-tags: [architecture]
+tags: [architecture, dependencies, patterns]
 ---
 
-[https://github.com/auchenberg/node-madge](https://github.com/auchenberg/node-madge)
+You can use cli tool called [Madge](https://github.com/auchenberg/node-madge) to check for circular dependencies in you codebase. To check for a circular dependencie give it an entry point:
 
 ```bash
 madge --circular src/lib/base/modules/common/socket/model/baseGame.ts

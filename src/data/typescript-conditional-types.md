@@ -1,5 +1,5 @@
 ---
-title: typescript conditional types
+title: Typescript conditional types
 date: sep 15, 2020
 tags: [typescript]
 ---

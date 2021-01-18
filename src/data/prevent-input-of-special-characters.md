@@ -1,10 +1,10 @@
 ---
-title: prevent input of special characters
+title: Prevent input of special characters
 date: sep 25, 2020
 tags: [react]
 ---
 
-Prevent input. For example - input only digits.
+Prevent input by RegEx. For example - input only digits.
 
 ```jsx
 <Input

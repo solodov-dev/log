@@ -1,5 +1,5 @@
 ---
-title: tsdoc
+title: Tsdoc
 date: sep 16, 2020
 tags: [typescript]
 ---

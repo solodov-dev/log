@@ -1,5 +1,5 @@
 ---
-title: waiting for the element to load in react-testing-library
+title: Waiting for the element to load in react-testing-library
 date: aug 10, 2020
 tags: [react, react-testing-library, testing]
 ---

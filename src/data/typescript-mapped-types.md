@@ -1,7 +1,7 @@
 ---
-title: typescript mapped types
+title: Typescript mapped types
 date: aug 13, 2020
-tags: [typescript]
+tags: [typescript, types]
 ---
 
 ```tsx
