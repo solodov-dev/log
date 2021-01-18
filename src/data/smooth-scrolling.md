@@ -5,5 +5,5 @@ tags: [js, scroll]
 ---
 
 ```js
-el.scrollIntoView({behavior: 'smooth'});
+el.scrollIntoView({ behavior: 'smooth' });
 ```

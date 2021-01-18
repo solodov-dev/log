@@ -57,6 +57,20 @@ p {
   margin-bottom: 1rem;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.7rem;
+}
+
+tr {
+  border: 1px solid var(--secondary);
+  margin: 4px 0;
+}
+
 @media screen and (max-width: 800px) {
   h1,
   h2,

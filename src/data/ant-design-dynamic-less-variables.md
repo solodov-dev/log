@@ -4,13 +4,13 @@ date: sep 19, 2020
 tags: [ant-design, less, css variables]
 ---
 
-1) Install dependencies
+1. Install dependencies
 
 ```bash
 npm i -D antd-theme-webpack-plugin babel-plugin-import customize-cra less less-loader react-app-rewired
 ```
 
-2) Create config-overrides.js (same level as package.json)
+2. Create config-overrides.js (same level as package.json)
 
 ```jsx
 const path = require('path');
@@ -46,7 +46,7 @@ module.exports = override(
 );
 ```
 
-3) In your index.html
+3. In your index.html
 
 ```html
 <script>
@@ -58,14 +58,14 @@ module.exports = override(
 ></script>
 ```
 
-4) Create src/styles/vars.less file
+4. Create src/styles/vars.less file
 
 ```less
 @import '~antd/lib/style/themes/default.less';
 @primary-color: #dada;
 ```
 
-5) Now you can change less variables in your code
+5. Now you can change less variables in your code
 
 ```tsx
 (window as any).less.modifyVars({ '@primary-color': getRequiredEnv('REACT_APP_PRIMARY_COLOR') }};

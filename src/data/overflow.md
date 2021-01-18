@@ -8,7 +8,7 @@ Setting one axis to `overflow: visible` while setting the other axis to a diff
 
 ```css
 .box {
-  overflowX: visible;
+  overflowx: visible;
   /* overflowY: auto; */
 }
 ```

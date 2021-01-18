@@ -9,7 +9,7 @@ tags: [typescript]
 
 const div = document.getElementById('my-div')!;
 
-// alternatively 
+// alternatively
 
 const div = document.getElementById('my-div') as HTMLDivElement;
 ```

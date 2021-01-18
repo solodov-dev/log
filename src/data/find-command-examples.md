@@ -1,8 +1,9 @@
 ---
 date: '2021-01-12'
-title: 35 expamples for find command 
+title: 35 expamples for find command
 tags: [find, linux, shell]
 ---
+
 ## 1. Find Files Using Name in Current Directory
 
 Find all the files whose name is tecmint.txt in a current working directory.

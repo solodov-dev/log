@@ -9,7 +9,7 @@ tags: [css]
 ```
 
 ```css
-#gradient{
+#gradient {
   background-image: linear-gradient(
       to bottom,
       rgba(245, 246, 252, 0.52),
