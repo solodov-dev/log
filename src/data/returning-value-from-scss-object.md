@@ -1,5 +1,5 @@
 ---
-date: "2021-01-22"
+date: '2021-01-22'
 title: Return a value from a predefined SCSS object
 tags: [scss, styles, mixins]
 ---
@@ -22,8 +22,7 @@ We can return a value with this function:
 ```scss
 @function getVar($key, $themes: $themes) {
   @each $theme, $colors in $themes {
-      @return map-get($colors, $key);
+    @return map-get($colors, $key);
   }
 }
 ```
-
