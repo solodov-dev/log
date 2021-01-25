@@ -49,4 +49,6 @@ And styling:
   border: inherit;
   border-width: 3px;
 }
+
+[See the example here](https://codepen.io/solodov-dev/pen/XWjLaJV?editors=1100)
 ```
