@@ -4,7 +4,7 @@ title: CSS flag container
 tags: [css, shapes, flag]
 ---
 
-If you need a css shape container with border and flexible content:
+If you need a css flag shaped container with border and flexible content:
 
 ```html
 <div class="flag">
@@ -49,6 +49,5 @@ And styling:
   border: inherit;
   border-width: 3px;
 }
-
-[See the example here](https://codepen.io/solodov-dev/pen/XWjLaJV?editors=1100)
 ```
+[See the example here](https://codepen.io/solodov-dev/pen/XWjLaJV?editors=1100)
