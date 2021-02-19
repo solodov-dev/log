@@ -1,7 +1,7 @@
 ---
 date: "2021-02-16"
 title: Calculating with functions
-tags: [kata, codewars, solution]]
+tags: [kata, codewars, solution]
 ---
 
 I really enjoyed this one! You can find this kata [here](https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39/javascript);
