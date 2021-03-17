@@ -1,5 +1,5 @@
 ---
-date: "2021-01-25"
+date: '2021-01-25'
 title: CSS flag container
 tags: [css, shapes, flag]
 ---
@@ -9,9 +9,10 @@ If you need a css flag shaped container with border and flexible content:
 ```html
 <div class="flag">
   <div class="content">Title</div>
-  <div class="fly"/>
+  <div class="fly" />
 </div>
 ```
+
 And styling:
 
 ```css
@@ -26,13 +27,13 @@ And styling:
 
 .content {
   padding: 11px 13px 11px 33px;
-  border:inherit;
+  border: inherit;
   border-width: 3px 0 3px 3px;
 }
 
 .fly {
   position: relative;
-  border:inherit;
+  border: inherit;
   border-width: 3px 0;
   width: 30px;
   overflow: hidden;
@@ -50,4 +51,5 @@ And styling:
   border-width: 3px;
 }
 ```
+
 [See the example here](https://codepen.io/solodov-dev/pen/XWjLaJV?editors=1100)

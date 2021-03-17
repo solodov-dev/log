@@ -1,5 +1,5 @@
 ---
-date: "2021-02-12"
+date: '2021-02-12'
 title: Optional function call in JS
 tags: [js, function, optional chaining]
 ---

@@ -1,5 +1,5 @@
 ---
-date: "2021-03-17"
+date: '2021-03-17'
 title: Problems with opacity percentage in sass
 tags: [sass, opacity]
 ---

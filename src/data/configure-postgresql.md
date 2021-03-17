@@ -1,5 +1,5 @@
 ---
-date: "2021-02-01"
+date: '2021-02-01'
 title: Configure postgresql on arch/manjaro
 tags: [postgresql, sql, database]
 ---
@@ -33,6 +33,7 @@ Become a postgres user. Add a new database user using the `createuser` command:
 ```bash
 [postgres]$ createuser --interactive
 ```
+
 Create a new database over which the above user has read/write privileges using the `createdb` command (execute this command from your login shell if the database user has the same name as your Linux user, otherwise add `-O database-username` to the following command):
 
 ```bash

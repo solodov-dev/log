@@ -1,5 +1,5 @@
 ---
-date: "2021-02-16"
+date: '2021-02-16'
 title: Calculating with functions
 tags: [kata, codewars, solution]
 ---
@@ -24,22 +24,21 @@ The most outer function represents the left operand, the most inner function rep
 Division should be integer division. For example, this should return 2, not 2.666666...:
 
 ```js
-const r = (fn, n) => fn ? fn(n) : n;
+const r = (fn, n) => (fn ? fn(n) : n);
 
-const zero = f => r(f, 0);
-const one = f => r(f, 1);
-const two = f => r(f, 2);
-const three = f => r(f, 3);
-const four = f => r(f, 4);
-const five = f => r(f, 5);
-const six = f => r(f, 6);
-const seven = f => r(f, 7);
-const eight = f => r(f, 8);
-const nine = f => r(f, 9);
+const zero = (f) => r(f, 0);
+const one = (f) => r(f, 1);
+const two = (f) => r(f, 2);
+const three = (f) => r(f, 3);
+const four = (f) => r(f, 4);
+const five = (f) => r(f, 5);
+const six = (f) => r(f, 6);
+const seven = (f) => r(f, 7);
+const eight = (f) => r(f, 8);
+const nine = (f) => r(f, 9);
 
-const plus = a => b => b + a;
-const minus = a => b => b - a;
-const times = a => b => b * a;
-const dividedBy = a => b => Math.floor(b / a);
+const plus = (a) => (b) => b + a;
+const minus = (a) => (b) => b - a;
+const times = (a) => (b) => b * a;
+const dividedBy = (a) => (b) => Math.floor(b / a);
 ```
-

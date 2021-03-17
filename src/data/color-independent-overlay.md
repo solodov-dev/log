@@ -1,5 +1,5 @@
 ---
-date: "2021-02-13"
+date: '2021-02-13'
 title: Add color independent overlay
 tags: [overlay, color, button, css]
 ---
@@ -12,6 +12,6 @@ button {
 }
 
 button:hover {
-     box-shadow: inset 0 0 0 99999px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 99999px rgba(255, 255, 255, 0.2);
 }
 ```
