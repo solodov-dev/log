@@ -8,29 +8,21 @@ Creating an object from enum by iterating over it with `Object.keys`:
 
 ```tsx
 enum QuestionStatus {
-  CREATED = 'CREATED',
-  PUBLISHED = 'PUBLISHED',
-  REJECTED = 'REJECTED',
+  CREATED,
+  PUBLISHED,
+  REJECTED,
 }
 
-function getQuestionStatusTitle(status: QuestionStatus): string | undefined {
-  switch (status) {
-    case QuestionStatus.CREATED:
-      return 'Cоздан';
-    case QuestionStatus.PUBLISHED:
-      return 'Опубликован';
-    case QuestionStatus.REJECTED:
-      return 'Отклонен';
-  }
+const titles = {
+  [QuestionStatus.CREATED]: 'Создан',
+  [QuestionStatus.PUBLISHED]: 'Опубликован',
+  [QuestionStatus.REJECTED]: 'Отклонен'
 }
 
-function createTableFilters<T>(
-  statuses: T,
-  getTitle: (status: T[keyof T]) => string | undefined
-) {
+function createTableFilters<T>(statuses: T) {
   return Object.keys(statuses).map((key) => ({
     value: key,
-    text: getTitle(statuses[key as keyof T]),
+    text: titles[key]
   }));
 }
 ```
