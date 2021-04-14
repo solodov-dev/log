@@ -1,5 +1,5 @@
 ---
-date: "2021-04-12
+date: "2021-04-12"
 title:Tournament table with CSS
 tags: [css, graph]
 ---
