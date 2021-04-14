@@ -16,13 +16,13 @@ enum QuestionStatus {
 const titles = {
   [QuestionStatus.CREATED]: 'Создан',
   [QuestionStatus.PUBLISHED]: 'Опубликован',
-  [QuestionStatus.REJECTED]: 'Отклонен'
-}
+  [QuestionStatus.REJECTED]: 'Отклонен',
+};
 
 function createTableFilters<T>(statuses: T) {
   return Object.keys(statuses).map((key) => ({
     value: key,
-    text: titles[key]
+    text: titles[key],
   }));
 }
 ```
