@@ -16,4 +16,4 @@ tags: []
 ---
 EOF
 
-vim src/data/$1.md
+vim $1.md
